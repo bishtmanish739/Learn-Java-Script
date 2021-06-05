@@ -139,5 +139,33 @@ console.log(mydate)
 //Dom (documetn object model) manipulation
 
 
+let element=document.getElementById("clickme");
+element.style.backgroundColor="cyan";
+element.innerText='Aapne mujhe click nhi kiya';
+let ec=document.getElementsByClassName("container");
+ec[0].style.background="yellow";
+//other method .add .remove 
+console.log(ec);
+tn=document.getElementsByTagName('div');
+tag=document.createElement('p');
+tag.innerText='mere papa js hain';
+
+tn[0].appendChild(tag);
+element.onclick=function(event){
+    alert('mujhe kyu dabaya')
+
+}
+function sum(){
+    console.log('jdalsjlkd');
+    return;
+}
+setTimeout(sum,2000);
+//Local Storage 
+localStorage.setItem('name','manish');
+localStorage.getItem('name');
+    
+
+
+
 
 
